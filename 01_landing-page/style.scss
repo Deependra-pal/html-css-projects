@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  width: 100%;
+  width: 100%;
+  background-color: #fff;
+
+  nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    .nav-part1 {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+
+      h3,
+      i {
+        padding: 5px 10px;
+        border: 2px solid Black;
+        border-radius: 20px;
+        font-size: 14px;
+      }
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 22px;
+    }
+
+    button {
+      border: 1.5px solid black;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+    #btn2 {
+      background-color: orangered;
+    }
+  }
+
+  >h1{
+     width:100%;
+     text-align: center;
+     font-size: 120px;
+     text-transform: uppercase;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%); 
+  }
+  img{
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+  }
+  .img1{
+    transform: translate(-50%,-50%) rotate(-15deg)
+  }
+    .img2{
+    transform: translate(-50%,-50%) rotate(-10deg)
+  }
+    .img3{
+    transform: translate(-50%,-50%) rotate(-5deg)
+  }
+
+  .left-bottom{
+    padding: 30px 20px;
+    position: absolute;
+    bottom: 0px;
+   h3{
+     font-size: 15px;
+     font-weight: 400;
+   }
+  }
+  .right-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    padding: 30px 20px;
+    
+  .icon{
+    padding:10px 20px;
+    font-size: 20px;
+    i{
+      padding-right: 10px;
+    }
+  }
+ 
+    h3{
+       
+      font-size: 15px;
+      font-weight: 400;
+    }
+  
+
+  }
+}
