@@ -1,0 +1,108 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+@mixin card-properties(){
+      border: 2px solid black;
+      padding: 10px;
+      text-align: center;
+      h3{ 
+        padding:2.5px 0;
+      font-size: 1.2rem;
+      }
+      p{
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      h4{
+        padding-top: 5px;
+      }
+}
+body{
+  height: 100%;
+  width: 100%;
+  background-color: wheat;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header header header header"
+                       "main main main main"
+                       "footer footer footer footer"
+                       ;
+                       gap:15px;
+                      padding:20px 30px;
+
+
+  header{
+    grid-area: header;
+     text-align: center;
+     p{
+        font-weight: 500;
+      }
+     
+   
+  }
+   main{
+    display: grid;
+    gap: 10px;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas: 
+    "card1 card2 card3 card4"
+    "card5 card6";
+    grid-area: main;
+    gap: 15px;
+    
+       
+
+    img{
+      width: 100%;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+    }
+
+    .card1{
+        @include card-properties();
+    }
+     .card2{
+      @include card-properties();
+    }
+     .card3{
+        @include card-properties(); 
+    }
+    .card4{
+        @include card-properties();
+     }
+    
+     .card5{
+         @include card-properties();
+    }
+     .card6{
+     @include card-properties();
+    }
+   }
+    footer{
+       grid-area: footer;
+      text-align: center;
+      p{
+        border-top: 2px solid rgba(128, 128, 128,0.3);
+        color: grey;
+        padding: 10px;
+        font-weight: 500;
+      }
+    }
+
+  }
+ 
+  
