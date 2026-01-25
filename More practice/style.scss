@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+     
+}
+
+
+@mixin background-property() {
+    background-size: cover;
+    background-position: center;
+     
+
+}
+  
+
+main { 
+    height: 100%;
+    width: 100%;
+    background-color: #e6e6e6;
+    display: flex;
+    gap: 10px;
+    
+    
+
+    
+    section { 
+        
+        background-color: red;
+        border: 2px solid #fff;
+        flex-grow: 1;
+        border-radius: 10px;
+
+    }
+
+    section:nth-child(1) {
+        background-image: url("https://plus.unsplash.com/premium_photo-1760466932613-daeb4c1be4a8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=600");
+        @include background-property();
+        
+          
+    }
+
+    section:nth-child(2) {
+        background-image: url("https://images.unsplash.com/photo-1760807516672-21d48903a819?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=600");
+        @include background-property();
+    }
+
+    section:nth-child(3) {
+        background-image: url("https://images.unsplash.com/photo-1761042447153-84cae6a33d1b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=600");
+        @include background-property();
+    }
+
+    section:nth-child(4) {
+        background-image: url("https://images.unsplash.com/photo-1761646062286-cd2f3c8574dd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=600");
+        @include background-property();
+    }
+
+    section:nth-child(5) {
+        background-image: url("https://images.unsplash.com/photo-1761630601886-e90efe7fc081?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=600");
+        @include background-property();
+    }
+
+    :hover {
+        flex-grow: 2;
+        transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+        cursor: pointer;
+    }
+}
